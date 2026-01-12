@@ -1,6 +1,15 @@
 
 FROM node:24-alpine AS base
 
+ARG GIT_COMMIT=unknown
+ARG GIT_REPO_URL=https://github.com/Dhia-Bechattaoui/app-destiny
+ARG BUILD_DATE=unknown
+
+LABEL org.opencontainers.image.source=$GIT_REPO_URL
+LABEL org.opencontainers.image.revision=$GIT_COMMIT
+LABEL org.opencontainers.image.created=$BUILD_DATE
+LABEL org.opencontainers.image.base.name="node:24-alpine"
+
 # Install dependencies only when needed
 FROM base AS deps
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.

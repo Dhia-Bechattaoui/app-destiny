@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-01-12
+
+### Added
+- **Docker**: Implemented full build system attestations (provenance, SBOM) and OCI labels for enhanced supply chain security.
+- **Docker**: Added `scripts/build_docker.sh` for automated builds with attestations.
+
 ## [0.1.0] - 2026-01-12
 
 ### Changed
@@ -25,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial Release
 
-[unreleased]: https://github.com/Dhia-Bechattaoui/app-destiny/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/Dhia-Bechattaoui/app-destiny/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/Dhia-Bechattaoui/app-destiny/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/Dhia-Bechattaoui/app-destiny/compare/v0.0.1...v0.1.0
 [0.0.1]: https://github.com/Dhia-Bechattaoui/app-destiny/releases/tag/v0.0.1
